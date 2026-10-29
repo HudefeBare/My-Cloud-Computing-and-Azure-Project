@@ -1,6 +1,6 @@
 # 📊 Azure Data Fundamentals (DP-900) – Cloud Data Services & Analytics Project
 
-*A hands-on project covering cloud computing fundamentals, Azure data services, and analytical workloads in Microsoft Fabric.*
+*A hands-on project covering cloud computing fundamentals, Azure data services, data ingestion, and analytical workloads using Microsoft Fabric.*
 
 ---
 
@@ -12,9 +12,9 @@
 
 ## 🔍 Overview
 
-This repository contains my Week 5 Azure Data Fundamentals (DP-900) work, completed as part of the Data Technician training course.
+This repository contains my Week 5 Cloud Computing and Azure Data Fundamentals (DP-900) work, completed as part of the Data Technician training course.
 
-The project covers cloud computing concepts, Azure cost estimation, relational and non-relational data services, data ingestion, and analytics using Microsoft Fabric and Power BI. It also includes hands-on Azure labs and a scenario-based solution design for a pet shop, "Paws & Whiskers".
+The project covers cloud computing concepts, Azure cost estimation, relational and non-relational data, data ingestion, and analytics using Microsoft Fabric and Power BI. It also includes hands-on Azure labs and a scenario-based solution for a pet shop, "Paws & Whiskers".
 
 ---
 
@@ -24,9 +24,9 @@ The project covers cloud computing concepts, Azure cost estimation, relational a
 
 - Understanding IaaS, PaaS, and SaaS with real-world examples
 - Public, private, hybrid, and community cloud models
-- Benefits and risks of cloud adoption, including scalability, flexibility, reliability, and unexpected costs
-- Comparing cloud services with on-premises infrastructure
-- Understanding major cloud providers: AWS, Microsoft Azure, and Google Cloud
+- Cloud benefits and risks, including scalability, flexibility, reliability, and unexpected costs
+- Cloud versus on-premises infrastructure
+- Comparing major providers: AWS, Microsoft Azure, and Google Cloud
 - Estimating cloud costs using the Azure Pricing Calculator
 
 ### ✔️ Relational Data – Azure SQL Database
@@ -38,17 +38,15 @@ The project covers cloud computing concepts, Azure cost estimation, relational a
 
 ### ✔️ Non-Relational Data – Azure Storage Account & Azure Cosmos DB
 
-- Created a storage account and explored Blob Storage, Data Lake Storage Gen2, and Azure Files
-- Created an Azure Cosmos DB account
-- Added JSON items and queried data using a SQL-like query language
-- Explored non-relational NoSQL data storage
+- Explored Blob Storage, Data Lake Storage Gen2, and Azure Files
+- Created an Azure Cosmos DB account and added JSON items
+- Queried non-relational data using a SQL-like query language
 
 ### ✔️ Analytical Workloads – Microsoft Fabric & Power BI
 
-- Explored data analytics and real-time analytics in Microsoft Fabric
-- Worked with Lakehouse concepts and data storage
+- Explored Lakehouse and real-time analytics concepts in Microsoft Fabric
 - Built a Power BI sales report using bar, pie, and map visuals
-- Connected data analysis with visual reporting and business insights
+- Used visualisations to present sales information and support analysis
 
 ### ✔️ Data Ingestion
 
@@ -56,22 +54,22 @@ The project covers cloud computing concepts, Azure cost estimation, relational a
 |---|---|
 | ⚡ **Eventstreams** | Capture and route real-time streaming data into Fabric |
 | 🔄 **Data pipelines** | Move and transform batch data from different sources |
-| 📁 **File uploads** | Load CSV, JSON, and Parquet files into a Lakehouse or storage account |
+| 📁 **File uploads** | Load CSV, JSON, and Parquet files into storage or a Lakehouse |
 | 🗄️ **Direct connections** | Connect Power BI to data sources such as SQL Server and Excel |
 
 ### ✔️ SQL Skills
 
-Core SQL used to query, filter, sort, summarise, and combine retail and sales data.
+Practised core SQL concepts for querying, filtering, sorting, aggregating, and combining data.
 
 | **SQL Clause** | **Purpose** |
 |---|---|
-| `SELECT` | Choose the columns to return |
+| `SELECT` | Choose columns to return |
 | `WHERE` | Filter rows using a condition |
-| `ORDER BY` | Sort results |
+| `ORDER BY` | Sort query results |
 | `GROUP BY` | Calculate totals, counts, and averages |
 | `JOIN` | Combine related tables |
 
-Example queries using a sample retail dataset:
+The following illustrative examples demonstrate these SQL concepts using a sample retail dataset. They are examples of query syntax, not verified outputs from the Azure lab.
 
 **SELECT, WHERE & ORDER BY – Orders over 100**
 
@@ -82,7 +80,7 @@ WHERE Revenue > 100
 ORDER BY Revenue DESC;
 ```
 
-**GROUP BY – Total revenue per product category**
+**GROUP BY – Total revenue per category**
 
 ```sql
 SELECT Category, SUM(Revenue) AS TotalRevenue
@@ -102,17 +100,15 @@ GROUP BY c.City
 ORDER BY TotalRevenue DESC;
 ```
 
-*These are illustrative examples written to demonstrate SQL syntax on a sample retail dataset. They are not copied from the lab screenshots.*
-
 ---
 
 ## 📁 Repository Contents
 
-- Cloud computing concepts and service model notes
+- Cloud computing notes and service model comparisons
 - Azure Pricing Calculator estimate
 - Azure SQL Database, Storage Account, Cosmos DB, and Fabric lab screenshots
 - Power BI sales report
-- Computer Misuse Act, copyright, and data protection notes
+- Data protection, Computer Misuse Act, and copyright notes
 - Scenario-based Azure recommendations for "Paws & Whiskers"
 
 ---
@@ -121,14 +117,14 @@ ORDER BY TotalRevenue DESC;
 
 Throughout this project, I strengthened my ability to:
 
-- Identify suitable cloud service models for different business requirements
+- Identify suitable cloud service models for different business needs
 - Estimate Azure costs using the Pricing Calculator
 - Distinguish between relational and non-relational data
-- Work with Azure SQL Database, Storage Accounts, and Cosmos DB
-- Understand data ingestion, storage, analysis, and visualisation in Microsoft Fabric
-- Use SQL to filter, sort, aggregate, and combine data
-- Create Power BI visualisations to communicate sales insights
-- Apply relevant UK data protection and legal principles, including GDPR and the Data Protection Act 2018
+- Understand Azure SQL Database, Storage Accounts, and Cosmos DB
+- Explain data ingestion, storage, analysis, and visualisation in Microsoft Fabric
+- Use SQL to query, filter, aggregate, and combine data
+- Present data through Power BI visualisations
+- Understand relevant legal and data protection principles, including GDPR and the Data Protection Act 2018
 
 ---
 
@@ -136,7 +132,7 @@ Throughout this project, I strengthened my ability to:
 
 - Microsoft Azure
 - Azure SQL Database
-- Azure Storage Accounts
+- Azure Storage Account
 - Azure Cosmos DB
 - Microsoft Fabric (Lakehouse and Eventstreams)
 - Azure Pricing Calculator
@@ -148,7 +144,7 @@ Throughout this project, I strengthened my ability to:
 
 ## 📘 Scenario Work (Example: "Paws & Whiskers" Pet Shop)
 
-The project included designing an Azure-based solution for a pet shop that currently manages its data using spreadsheets.
+The project included designing a proposed Azure-based solution for a pet shop that currently manages its data using spreadsheets.
 
 ### ✔️ Data Laws & Compliance
 
@@ -164,13 +160,15 @@ The project included designing an Azure-based solution for a pet shop that curre
 - **Azure Blob Storage** for files and larger datasets
 - **Azure Data Factory** for automated data collection and transformation
 - **Azure Machine Learning** for potential customer behaviour analysis
-- **Azure Synapse Analytics** for large-scale sales analysis and reporting
+- **Azure Synapse Analytics** for large-scale analytics and reporting
+
+*These are proposed services for the scenario, not services claimed to have been implemented.*
 
 ### ✔️ Data Modelling & Storage
 
 - Customer, transaction, pet inventory, and product category data
 - Data formats: CSV, JSON, and Parquet
-- Encryption, access controls, backup, and disaster recovery
+- Encryption, access control, backup, and disaster recovery
 - Power BI dashboards to support management decisions
 
 ---
@@ -179,23 +177,25 @@ The project included designing an Azure-based solution for a pet shop that curre
 
 ### 1. Azure SQL Database Lab
 
-The Azure portal after completing the lab. The Dealership database on `sqlserver66287031` was provisioned, queried using SQL, and then deleted to prevent ongoing charges.
+The Dealership database was provisioned on `sqlserver66287031`, queried using SQL, and deleted after the lab to avoid ongoing charges.
 
 ### 2. Azure Storage Account Lab
 
-The `dp900-lab-rg` resource group containing the `st0rage99` storage account in France Central. The lab explored Blob Storage, Data Lake Storage Gen2, and Azure Files before the resources were removed.
+The `st0rage99` storage account in France Central was used to explore Blob Storage, Data Lake Storage Gen2, and Azure Files.
 
 ### 3. Azure Cosmos DB Lab
 
-The `accountonon` Cosmos DB account in West US 2. JSON items were added and queried using a SQL-like language, demonstrating non-relational NoSQL data storage.
+The `accountonon` Cosmos DB account in West US 2 was used to add and query JSON items, demonstrating non-relational NoSQL data.
 
 ### 4. Microsoft Fabric Lab
 
-The Fabric "My workspace" environment at the end of the analytics lab. The OneLake catalog and Real-Time sections were explored as part of the Lakehouse and streaming analytics exercises.
+Explored the Fabric workspace, OneLake catalog, and Real-Time section during the Lakehouse and streaming analytics exercises.
 
 ### 5. Power BI Sales Report
 
-The final Power BI Desktop report, featuring revenue by category (bar chart), quantity by category (pie chart), and revenue by city (map visual).
+The final Power BI report included revenue by category (bar chart), quantity by category (pie chart), and revenue by city (map).
+
+*Insert the corresponding workbook screenshots under each heading.*
 
 ---
 
@@ -204,9 +204,7 @@ The final Power BI Desktop report, featuring revenue by category (bar chart), qu
 **Hudefe Bare**  
 Aspiring Data Analyst
 
-Data Technician trainee
-
-Developing practical skills in:
+Data Technician trainee, developing practical skills in:
 
 - Cloud Computing (Microsoft Azure)
 - Data Analytics (SQL and Power BI)
