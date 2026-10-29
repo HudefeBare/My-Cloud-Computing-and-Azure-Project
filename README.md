@@ -193,9 +193,10 @@ Explored the Fabric workspace, OneLake catalog, and Real-Time section during the
 
 ### 5. Power BI Sales Report
 
-The final Power BI report included revenue by category (bar chart), quantity by category (pie chart), and revenue by city (map).
+Power BI report includes revenue by category (bar chart), quantity by category (pie chart), and revenue by city (map).
 
-*Insert the corresponding workbook screenshots under each heading.*
+<img width="1134" height="672" alt="Screenshot 2026-10-29 at 14 30 04" src="https://github.com/user-attachments/assets/5669ae2f-060f-4bf0-a68f-72c39def24af" />
+
 
 ---
 
