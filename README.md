@@ -118,11 +118,12 @@ Microsoft Fabric lab The Fabric "My workspace" at the end of the analytics lab, 
 Power BI sales report The final Power BI Desktop report: revenue by category (bar chart), quantity by category (pie chart) and revenue by city (map).
 
 ✨ About the Author
-[Your Name]
+Hudefe Bare
+Aspiring Data Analyst
 
 Data Technician trainee
 
-Building skills in:
+Developed skills in:
 
 Cloud Computing (Azure)
 Data Analytics (SQL, Power BI)
